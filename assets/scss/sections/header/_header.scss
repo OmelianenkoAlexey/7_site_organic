@@ -1,0 +1,21 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.header {
+  margin-bottom: 140px;
+  
+}
+
+.header-menu {
+    display: flex;
+  position: relative;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    @include lg {
+      flex-direction: column;
+    }
+}
