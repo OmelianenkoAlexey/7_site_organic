@@ -1,36 +1,31 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.header-menu__navbar {
- 
-
-
-}
+.header-menu__navbar {}
 
 .header-navbar {
-
+    grid-area: nav;
 }
 
 .header-navbar__list {
     display: flex;
     gap: 40px;
-    @include sm {
+
+    @include md {
         display: none;
         position: absolute;
         z-index: 5;
-      top: 100%;
+        top: 100%;
         left: 0;
-         right: 0;
+        right: 0;
         background-color: #f4faf8;
         height: 50vh;
-       
+
     }
 }
 
 .header-navbar__item {
-
-
-    @include sm {
+    @include md {
         padding: 8px;
         margin-top: 10px;
         margin-left: 20px;
@@ -39,8 +34,6 @@
         border-radius: 10px;
     }
 }
-
-
 
 .header-navbar__link {
     padding: 10px 10px;
@@ -57,32 +50,27 @@
     background: #09A66D;
     border-radius: 8px;
     color: #ffffff;
-    //padding: 10px 0px;
     transform: scale(1.1);
-
 }
 
 .active {
-  
-
-    @include sm-min {
-         background: #09A66D;
-    border-radius: 8px;
-    color: #ffffff;
-    //padding: 10px; 
+    @include md-min {
+        background: #09A66D;
+        border-radius: 8px;
+        color: #ffffff;
     }
 }
 
 .header-menu__logo {
-
+grid-area: logo;
+text-align: center;
     @include lg {
-        order: -1;
+        // order: -1;
     }
 }
 
 .header-menu__image {
     transition: 0.5s;
-
 }
 
 .header-menu__image:hover {
@@ -95,7 +83,10 @@
     align-items: center;
 }
 
-.header-client {}
+.header-client {
+    grid-area: client;
+}
+
 
 .header-client__search {
     width: 40px;
@@ -107,13 +98,7 @@
     border-radius: 20px;
 }
 
-.header-client__search-link {
-
-    //align-items: center;
-    // display: block;
-    // margin-top: auto;
-    // margin-bottom: auto;
-}
+.header-client__search-link {}
 
 .header-client__search-image {}
 
@@ -153,14 +138,11 @@
     line-height: 20px;
     color: #ffffff;
     padding: 10px;
-
-
 }
-
 
 .navbar-hamburger {
 
-    @include sm-min {
+    @include md-min {
         display: none;
     }
 
@@ -260,7 +242,7 @@
     transition: 0.5s ease-in-out;
     transform: rotate(0deg);
 
-    @include sm {
+    @include md {
         display: block;
     }
 }
