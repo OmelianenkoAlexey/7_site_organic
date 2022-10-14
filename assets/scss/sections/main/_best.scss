@@ -79,13 +79,16 @@
     gap: 24px;
     align-items: center;
     padding: 40px 0;
+
+    transition: 0.5s;
+    
+        &:hover {
+                background: #f3fbf8;
+            box-shadow: 0 0 10px #09A66D;
+        }
+
+    
 }
-
-.block-content__item:hover {
-    background: #f3fbf8;
-
-}
-
 
 .block-content__item-picture {
     min-width: 80px;

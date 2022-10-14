@@ -48,6 +48,12 @@
             max-width: 170px;
             border-radius: 20px;
             text-align: center;
+            transition: 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 10px #09A66D;
+            }
+
         }
 
         &__link {
@@ -58,6 +64,8 @@
             line-height: 30px;
 
             color: #555555;
+
+
 
         }
 
@@ -100,12 +108,5 @@
         &__button-link {}
 
         &__button-image {}
-
-
     }
-
-
-
-
-
 }

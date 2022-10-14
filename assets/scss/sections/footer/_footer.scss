@@ -46,23 +46,23 @@
     &-box {
         display: flex;
         gap: 140px;
-  
+
         max-width: 663px;
 
         @include md {
             gap: 78px;
         }
 
-                @include sm {
-                    gap: 25px;
-                flex-wrap: wrap;
-                    justify-content: center;
-                }
+        @include sm {
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &-item {
 
-   
+
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -85,6 +85,9 @@
             font-size: 18px;
             line-height: 23px;
             color: #222222;
+
+
+
         }
 
         &__description {
@@ -94,6 +97,14 @@
             font-size: 18px;
             line-height: 23px;
             color: #555555;
+            border-radius: 8px;
+            transition: 0.5s;
+
+            &:hover {
+                background: #f3fbf8;
+                box-shadow: 0 0 10px #09A66D;
+                color: #09A66D;
+            }
         }
 
         &--md {}

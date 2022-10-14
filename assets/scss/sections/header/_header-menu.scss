@@ -43,14 +43,15 @@
     font-size: 18px;
     line-height: 24px;
     color: #222222;
+        border-radius: 8px;
     transition: 0.5s;
 }
 
 .header-navbar__link:hover {
     background: #09A66D;
-    border-radius: 8px;
     color: #ffffff;
-    transform: scale(1.1);
+    // transform: scale(1.2);
+        // color: #09A66D;
 }
 
 .active {
@@ -70,7 +71,7 @@ text-align: center;
 }
 
 .header-menu__image {
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .header-menu__image:hover {
@@ -96,6 +97,11 @@ text-align: center;
     align-items: center;
     background: #F3FBF8;
     border-radius: 20px;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 10px #09A66D;
+    }
 }
 
 .header-client__search-link {}
@@ -110,6 +116,11 @@ text-align: center;
     align-items: center;
     background: #F3FBF8;
     border-radius: 20px;
+    transition: 0.5s;
+    
+        &:hover {
+            box-shadow: 0 0 10px #09A66D;
+        }
 }
 
 .header-client__basket-link {}
@@ -124,9 +135,10 @@ text-align: center;
     border: none;
     background: #09A66D;
     border-radius: 8px;
+    transition: 0.5s;
 
     &:hover {
-        box-shadow: 0 0 15px green;
+        box-shadow: 0 0 10px #09A66D;
     }
 }
 

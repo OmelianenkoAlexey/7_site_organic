@@ -9,10 +9,7 @@
 
 .header-info__container {
     position: relative;
-
-
 }
-
 
 .header-content {
     display: flex;
@@ -46,35 +43,8 @@
         line-height: 30px;
         color: #555555;
         margin-bottom: 40px;
-
-
     }
-
-    // &__action {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 20px;
-
-
-    //     &-text {}
-
-    //     &-link {
-    //         width: 64px;
-    //         height: 64px;
-    //         border-radius: 60px;
-    //         background: #09A66D;
-
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //     }
-
-    //     &-image {}
 }
-
-
-
-
 
 .header-content__bg {
     position: absolute;
@@ -82,14 +52,10 @@
     top: -37px;
     z-index: -1;
 
-
     &-image {
         width: 100%;
     }
-
 }
-
-
 
 .header-rating {
     display: flex;
@@ -101,11 +67,8 @@
     }
 
     @include sm {
-    gap: 40px;
+        gap: 40px;
     }
-
-
-
 
     &__picture {}
 
@@ -149,8 +112,6 @@
             line-height: 48px;
             text-align: center;
             color: #000000;
-
-
         }
 
         &-description {
@@ -159,7 +120,6 @@
             text-align: center;
             color: #000000;
         }
-
     }
 }
 
@@ -168,19 +128,23 @@
     align-items: center;
     gap: 20px;
 
+    &__text {}
 
-    &-text {}
-
-    &-link {
+    &__link {
+        cursor: pointer;
         width: 64px;
         height: 64px;
         border-radius: 60px;
         background: #09A66D;
-
+        // background: red;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        // &:hover {
+        //     box-shadow: 0 0 10px #09A66D;
+        // }
     }
 
-    &-image {}
+    &__image {}
 }
