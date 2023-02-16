@@ -6,6 +6,11 @@
     padding-top: 67px;
     padding-bottom: 118px;
 
+    @include sm {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
 
     &-container {
         display: flex;
@@ -15,6 +20,10 @@
 
         @include xl {
             flex-direction: column;
+        }
+
+        @include sm {
+            gap: 50px;
         }
     }
 

@@ -260,6 +260,7 @@ ul {
 
   grid-area: logo;
 }
+
 .header-menu__image {
   -webkit-transition: 1s;
        -o-transition: 1s;
@@ -1166,6 +1167,7 @@ ul {
     display: none;
 
     height: 50vh;
+    height: 86vh;
 
     background-color: #f4faf8;
   }
@@ -1177,6 +1179,13 @@ ul {
 
     border-radius: 10px;
     background: #09a66d;
+  }
+  .header-menu__logo {
+    margin-right: auto;
+  }
+  .header-menu__client {
+    margin-right: auto;
+    margin-left: auto;
   }
   .navbar-hamburger {
     display: block;
@@ -1258,6 +1267,13 @@ ul {
   }
   .apps-content__description {
     margin-bottom: 7px;
+  }
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .footer-container {
+    gap: 50px;
   }
   .footer-box {
     -ms-flex-wrap: wrap;
